@@ -1,2 +1,2 @@
 # MOOC-DS
-DS in MOOC BY PTA
+DS in MOOC by PTA

@@ -1,2 +1,1 @@
-# MOOC-DS-PTA
-DS in MOOC by PTA
+DS in PAT

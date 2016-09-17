@@ -102,6 +102,7 @@ bool Insert( List L, ElementType X, Position P )
 
 bool Delete( List L, Position P )
 {
+	
 	while(L&&L->Next!=P&&L!=P)
 	{
 		L=L->Next;
@@ -112,6 +113,7 @@ bool Delete( List L, Position P )
 		return false;
 	}
 	L->Next=L->Next->Next;
+	free(P); 
 	return true;
 }
 

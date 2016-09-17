@@ -94,18 +94,21 @@ List Insert( List L, ElementType X, Position P )
 List Delete( List L, Position P )
 {
 	List head=(List)malloc(sizeof(struct LNode));
+	List p;
 	head->Next=L;
 	L=head;
 	while(L&&L->Next!=P)
 	{
 		L=L->Next;
-	} 
+	}  
 	if(L==NULL)
 	{
 		printf("Wrong Position for Deletion\n");
 		return ERROR;
 	}
+	p=L->Next;
 	L->Next=L->Next->Next;
+	free(p);
 	return head->Next;
 }
 
